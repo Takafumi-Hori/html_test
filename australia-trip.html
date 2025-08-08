@@ -205,6 +205,18 @@
             margin-left: 10px;
         }
         
+        .leaflet-tooltip.spot-label {
+            background: rgba(46, 125, 50, 0.9) !important;
+            border: none !important;
+            border-radius: 4px !important;
+            color: white !important;
+            font-weight: bold !important;
+            font-size: 12px !important;
+            padding: 4px 8px !important;
+            white-space: nowrap !important;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;
+        }
+        
         @media (max-width: 768px) {
             h1 {
                 font-size: 2em;
@@ -239,12 +251,22 @@
         <section class="section">
             <h2>📍 旅行ルート＆観光スポット</h2>
             
+            <div style="background: #E3F2FD; padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 5px solid #1976D2;">
+                <h3 style="color: #1565C0; margin-bottom: 10px;">🚗 移動時間の目安</h3>
+                <ul style="margin: 10px 0; padding-left: 20px;">
+                    <li>総走行距離：約1,200km</li>
+                    <li>総運転時間：約20時間</li>
+                    <li>平均運転時間/日：3～4時間</li>
+                    <li style="color: #D32F2F; font-weight: bold;">※ 休憩をこまめに取りましょう（2時間ごとに15分休憩推奨）</li>
+                </ul>
+            </div>
+            
             <div class="day-section">
                 <h3>1日目：シドニー市内</h3>
                 <ul class="spot-list">
                     <li>
                         <span class="spot-name">タロンガ動物園</span>
-                        <span class="distance">空港から40分</span>
+                        <span class="distance">🚗 空港から40分</span>
                         <div class="spot-detail">
                             • シドニー港を一望できる動物園<br>
                             • コアラ、カンガルー、ウォンバット<br>
@@ -253,7 +275,7 @@
                     </li>
                     <li>
                         <span class="spot-name">ハーバーブリッジ</span>
-                        <span class="distance">同エリア</span>
+                        <span class="distance">🚗 タロンガから15分</span>
                         <div class="spot-detail">
                             • シドニーのシンボル<br>
                             • 橋の上からの絶景<br>
@@ -268,7 +290,7 @@
                 <ul class="spot-list">
                     <li>
                         <span class="spot-name">スリーシスターズ展望台</span>
-                        <span class="distance">シドニーから2時間</span>
+                        <span class="distance">🚗 シドニー市内から2時間</span>
                         <div class="spot-detail">
                             • 世界遺産の景観<br>
                             • 日の出・日没の絶景<br>
@@ -277,17 +299,16 @@
                     </li>
                     <li>
                         <span class="spot-name">シーニックワールド</span>
-                        <span class="distance">展望台から10分</span>
+                        <span class="distance">🚗 スリーシスターズから10分</span>
                         <div class="spot-detail">
                             • 世界最急勾配のケーブルカー<br>
                             • 渓谷上空のスカイウェイ<br>
                             📷 ベストショット：スカイウェイからのパノラマ
                         </div>
                     </li>
-                    </li>
                     <li>
                         <span class="spot-name">ジェノランケーブ</span>
-                        <span class="distance">ブルーマウンテンズから40分</span>
+                        <span class="distance">🚗 シーニックワールドから1時間40分</span>
                         <div class="spot-detail">
                             • 地底湖ボートツアー<br>
                             • 土ボタルの幻想的な光<br>
@@ -302,7 +323,7 @@
                 <ul class="spot-list">
                     <li>
                         <span class="spot-name">バリントントップス国立公園</span>
-                        <span class="distance">ジェノランケーブから2時間</span>
+                        <span class="distance">🚗 ジェノランケーブから3時間30分</span>
                         <div class="spot-detail">
                             • 古代の地層と奇岩<br>
                             • 野生カンガルー・ワラビー<br>
@@ -311,7 +332,7 @@
                     </li>
                     <li>
                         <span class="spot-name">ストックトンビーチ砂丘</span>
-                        <span class="distance">北部ルート経由</span>
+                        <span class="distance">🚗 バリントントップスから2時間</span>
                         <div class="spot-detail">
                             • 南半球最大の移動砂丘<br>
                             • サンドボーディング体験<br>
@@ -326,7 +347,7 @@
                 <ul class="spot-list">
                     <li>
                         <span class="spot-name">ネルソンベイ</span>
-                        <span class="distance">ポートスティーブンス泊</span>
+                        <span class="distance">🚗 ストックトンビーチから30分</span>
                         <div class="spot-detail">
                             • 野生イルカウォッチングクルーズ<br>
                             • コバルトブルーの海<br>
@@ -335,7 +356,7 @@
                     </li>
                     <li>
                         <span class="spot-name">ク・リン・ガイ国立公園</span>
-                        <span class="distance">シドニーへの帰路</span>
+                        <span class="distance">🚗 ネルソンベイから2時間30分</span>
                         <div class="spot-detail">
                             • 野生カンガルー、ワラビー<br>
                             • アボリジニの聖地<br>
@@ -350,7 +371,7 @@
                 <ul class="spot-list">
                     <li>
                         <span class="spot-name">ロイヤル国立公園</span>
-                        <span class="distance">シドニーから30分</span>
+                        <span class="distance">🚗 ク・リン・ガイから40分</span>
                         <div class="spot-detail">
                             • シドニー近郊の原生林<br>
                             • アボリジニの岩絵<br>
@@ -359,7 +380,7 @@
                     </li>
                     <li>
                         <span class="spot-name">シドニー空港</span>
-                        <span class="distance">ロイヤル国立公園から40分</span>
+                        <span class="distance">🚗 ロイヤル国立公園から40分</span>
                         <div class="spot-detail">
                             • レンタカー返却<br>
                             • 帰国フライト<br>
@@ -455,7 +476,8 @@
             center: [-32.5, 151.0],
             zoom: 7,
             minZoom: 6,
-            maxZoom: 12
+            maxZoom: 12,
+            scrollWheelZoom: false  // デフォルトのスクロールズームを無効化
         });
         
         // OpenStreetMapタイルレイヤーの追加
@@ -480,8 +502,10 @@
                 lat: -33.9461, 
                 lng: 151.1772, 
                 day: "出発・到着地点",
-                image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=300&fit=crop",
+                image: "https://images.unsplash.com/photo-1515861461225-1488dfdaf0a8?w=400&h=300&fit=crop",
                 description: "キングスフォード・スミス国際空港。レンタカー受取・返却場所。",
+                history: "1920年代から運用開始。太平洋横断飛行の先駆者チャールズ・キングスフォード・スミスにちなんで命名。",
+                trivia: "年間4,400万人が利用する南半球最大級の空港。カンガルーの剥製がお土産で人気！",
                 website: "https://www.sydneyairport.com.au/"
             },
             {
@@ -489,8 +513,10 @@
                 lat: -33.8432, 
                 lng: 151.2413, 
                 day: "1日目",
-                image: "https://images.unsplash.com/photo-1591216105236-5ba45970702a?w=400&h=300&fit=crop",
+                image: "https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?w=400&h=300&fit=crop",
                 description: "シドニー港を一望できる動物園。コアラ、カンガルー、ウォンバット観察。",
+                history: "1916年開園。アボリジニ語で『美しい眺め』を意味するタロンガと名付けられた。",
+                trivia: "コアラは1日20時間も寝る！ユーカリの葉には毒があるため、消化にエネルギーを使うから。園内のケーブルカーからの眺めは絶景！",
                 website: "https://taronga.org.au/sydney-zoo"
             },
             {
@@ -498,8 +524,10 @@
                 lat: -33.7320, 
                 lng: 150.3120, 
                 day: "2-3日目",
-                image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+                image: "https://images.unsplash.com/photo-1494548162494-384bba4ab999?w=400&h=300&fit=crop",
                 description: "世界遺産ブルーマウンテンズの象徴。朝焼けの絶景スポット。",
+                history: "アボリジニの伝説では、3人の美しい姉妹が魔法で岩に変えられた物語が伝わる。",
+                trivia: "3つの岩の名前はメーニー（922m）、ウィムラー（918m）、ガナドゥ（906m）。ユーカリの油分が太陽光に反射して青く見えることからブルーマウンテンズと呼ばれる！",
                 website: "https://www.visitnsw.com/destinations/blue-mountains"
             },
             {
@@ -507,8 +535,10 @@
                 lat: -33.7280, 
                 lng: 150.3015, 
                 day: "2-3日目",
-                image: "https://images.unsplash.com/photo-1523428096881-5bd79d043006?w=400&h=300&fit=crop",
+                image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop",
                 description: "世界最急勾配のケーブルカーとスカイウェイ。渓谷の絶景。",
+                history: "1880年代の炭鉱用トロッコが起源。1945年から観光施設として運営開始。",
+                trivia: "レイルウェイの最大傾斜角は52度で世界一急勾配！スカイウェイの床はガラス張りで、270m下の谷底が見える。高所恐怖症の方はご注意を！",
                 website: "https://www.scenicworld.com.au/"
             },
             {
@@ -516,8 +546,10 @@
                 lat: -33.8190, 
                 lng: 150.0206, 
                 day: "2-3日目",
-                image: "https://images.unsplash.com/photo-1527004760323-dd3d2c14ad52?w=400&h=300&fit=crop",
+                image: "https://images.unsplash.com/photo-1505577058444-a3dab90d4253?w=400&h=300&fit=crop",
                 description: "地底湖と土ボタルの幻想的な世界。青く光る地底湖は必見。",
+                history: "3億4千万年前に形成された世界最古級の鍾乳洞。1838年に探検家により発見。",
+                trivia: "土ボタル（グローワーム）は実は蚊の幼虫！お腹を光らせて獲物をおびき寄せる。地底湖の水は純度が高く、青く輝いて見える。",
                 website: "https://www.jenolancaves.org.au/"
             },
             {
@@ -525,8 +557,10 @@
                 lat: -32.8514, 
                 lng: 151.9003, 
                 day: "4日目",
-                image: "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=400&h=300&fit=crop",
+                image: "https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?w=400&h=300&fit=crop",
                 description: "南半球最大の移動砂丘。サンドボーディングと夕日の絶景。",
+                history: "1万年以上かけて形成された砂丘。第二次世界大戦中は軍事訓練場として使用。",
+                trivia: "砂丘の長さは32km、幅は最大4km！砂は年間約1m移動する。映画『マッドマックス』のロケ地としても有名。ラクダ乗り体験も可能！",
                 website: "https://www.portstephens.org.au/see-and-do/beaches/stockton-sand-dunes"
             },
             {
@@ -534,8 +568,10 @@
                 lat: -32.7167, 
                 lng: 152.1500, 
                 day: "4日目",
-                image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop",
+                image: "https://images.unsplash.com/photo-1518709591569-c2c82e2d4f14?w=400&h=300&fit=crop",
                 description: "野生イルカウォッチング。コバルトブルーの海でイルカと遭遇。",
+                history: "1920年代から漁業の町として発展。現在は観光業が主要産業。",
+                trivia: "約140頭のバンドウイルカが定住！遭遇率は98%以上。イルカは時速40kmで泳ぎ、ジャンプは最高6mにも達する。5-11月はザトウクジラも観察可能！",
                 website: "https://www.visitnsw.com/destinations/north-coast/port-stephens-area/nelson-bay"
             },
             {
@@ -543,8 +579,10 @@
                 lat: -33.9734, 
                 lng: 151.0531, 
                 day: "6日目",
-                image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+                image: "https://images.unsplash.com/photo-1528184039930-bd03972bd974?w=400&h=300&fit=crop",
                 description: "シドニー近郊の原生林。アボリジニの岩絵とウェストヘッド展望台。",
+                history: "1879年設立。アメリカのイエローストーンに次ぐ世界第2番目に古い国立公園。",
+                trivia: "アボリジニの岩絵は3,500年前のもの！カンガルー、クジラ、手形などが描かれている。園内には1,000種以上の植物と300種以上の動物が生息。",
                 website: "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/royal-national-park"
             },
             {
@@ -552,8 +590,10 @@
                 lat: -32.0500, 
                 lng: 151.4167, 
                 day: "4日目",
-                image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+                image: "https://images.unsplash.com/photo-1446630073557-fca43d580fbe?w=400&h=300&fit=crop",
                 description: "古代の地層と奇岩群。夕日に染まる岩が幻想的。",
+                history: "ゴンドワナ大陸時代の原生林が残る世界遺産。2億年前の地層が露出。",
+                trivia: "標高1,586mの高原地帯で、冬には雪が降ることも！絶滅危惧種のオウムやワラビーの聖域。南極ブナの原生林は恐竜時代から存在！",
                 website: "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/barrington-tops-national-park"
             },
             {
@@ -561,8 +601,10 @@
                 lat: -33.8523, 
                 lng: 151.2108, 
                 day: "1日目",
-                image: "https://images.unsplash.com/photo-1523428096881-5bd79d043006?w=400&h=300&fit=crop",
+                image: "https://images.unsplash.com/photo-1598948485421-33a1655d3c18?w=400&h=300&fit=crop",
                 description: "シドニーのシンボル。オペラハウスとの絶景ショット。",
+                history: "1932年開通。建設に8年を要し、当時世界最長のアーチ橋だった。",
+                trivia: "愛称は『コートハンガー』。全長1,149m、アーチの頂上は海面から134m！橋の塗装には30,000リットルのペンキが必要。ブリッジクライムでは頂上まで登れる！",
                 website: "https://www.sydney.com/destinations/sydney/sydney-city/sydney-harbour-bridge"
             },
             {
@@ -570,28 +612,43 @@
                 lat: -33.9860, 
                 lng: 151.1516, 
                 day: "5日目",
-                image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+                image: "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=400&h=300&fit=crop",
                 description: "野生カンガルー、ワラビー観察。アボリジニの聖地。",
+                history: "1894年設立。グリンガイ族が2万年以上前から居住していた地域。",
+                trivia: "800以上のアボリジニの遺跡が存在！早朝と夕方はカンガルーとワラビーの活動時間。エキドナ（ハリモグラ）も生息。秋には野生の蘭が咲き乱れる！",
                 website: "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/ku-ring-gai-chase-national-park"
             }
         ];
         
         // マーカーをプロット
         spots.forEach(function(spot) {
-            var popupContent = '<div style="width: 400px;">' +
+            var historyContent = spot.history ? '<div style="background: #FFF8DC; padding: 10px; border-radius: 5px; margin: 10px 0;"><strong style="color: #8B4513;">🏛️ 歴史：</strong><br>' + spot.history + '</div>' : '';
+            var triviaContent = spot.trivia ? '<div style="background: #F0F8FF; padding: 10px; border-radius: 5px; margin: 10px 0;"><strong style="color: #1E90FF;">💡 豆知識：</strong><br>' + spot.trivia + '</div>' : '';
+            
+            var popupContent = '<div style="width: 400px; max-height: 500px; overflow-y: auto;">' +
                 '<img src="' + spot.image + '" alt="' + spot.name + '" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px; margin-bottom: 10px;">' +
                 '<h3 style="margin: 10px 0; color: #2E7D32;">' + spot.name + '</h3>' +
                 '<p style="margin: 5px 0; color: #666; font-size: 14px;">' + spot.day + '</p>' +
                 '<p style="margin: 10px 0; line-height: 1.5;">' + spot.description + '</p>' +
+                historyContent +
+                triviaContent +
                 '<a href="' + spot.website + '" target="_blank" style="display: inline-block; margin-top: 10px; padding: 10px 20px; background: #4CAF50; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">🌐 公式サイトを見る</a>' +
                 '</div>';
             
-            L.marker([spot.lat, spot.lng], {icon: greenIcon})
+            var marker = L.marker([spot.lat, spot.lng], {icon: greenIcon})
                 .addTo(map)
                 .bindPopup(popupContent, {
                     maxWidth: 400,
                     className: 'custom-popup'
                 });
+            
+            // 観光地名のラベルを常時表示
+            marker.bindTooltip(spot.name, {
+                permanent: true,
+                direction: 'top',
+                className: 'spot-label',
+                offset: [0, -20]
+            }).openTooltip();
         });
         
         // ルートのポリライン（効率的な移動順）
@@ -632,8 +689,62 @@
             map.fitBounds(initialBounds, {padding: [30, 30]});
         }
         
-        // ポップアップが開いたときは何もしない（地図を動かさない）
-        // ユーザーが自由に地図を操作できるようにする
+        // カスタムズーム処理：マウス位置を中心にズーム
+        map.getContainer().addEventListener('wheel', function(e) {
+            e.preventDefault();
+            
+            var delta = e.deltaY;
+            var zoom = map.getZoom();
+            var newZoom;
+            
+            if (delta < 0) {
+                newZoom = Math.min(zoom + 1, map.getMaxZoom());
+            } else {
+                newZoom = Math.max(zoom - 1, map.getMinZoom());
+            }
+            
+            if (newZoom !== zoom) {
+                // マウス位置の座標を取得
+                var containerPoint = L.point(e.clientX, e.clientY);
+                var rect = map.getContainer().getBoundingClientRect();
+                containerPoint.x -= rect.left;
+                containerPoint.y -= rect.top;
+                
+                // マウス位置の地理座標を取得
+                var targetLatLng = map.containerPointToLatLng(containerPoint);
+                
+                // マウス位置を中心にズーム
+                map.setZoomAround(containerPoint, newZoom, {animate: true});
+            }
+        });
+        
+        // タッチデバイスでのピンチズーム対応
+        var touchZoom = L.Handler.extend({
+            addHooks: function() {
+                L.DomEvent.on(this._map._container, 'touchstart', this._onTouchStart, this);
+            },
+            
+            removeHooks: function() {
+                L.DomEvent.off(this._map._container, 'touchstart', this._onTouchStart, this);
+            },
+            
+            _onTouchStart: function(e) {
+                if (e.touches.length === 2) {
+                    var p1 = L.point(e.touches[0].clientX, e.touches[0].clientY);
+                    var p2 = L.point(e.touches[1].clientX, e.touches[1].clientY);
+                    var center = p1.add(p2).divideBy(2);
+                    
+                    var rect = this._map.getContainer().getBoundingClientRect();
+                    center.x -= rect.left;
+                    center.y -= rect.top;
+                    
+                    this._pinchCenter = center;
+                }
+            }
+        });
+        
+        map.addHandler('touchZoom', touchZoom);
+        map.touchZoom.enable();
     </script>
 </body>
 </html>
